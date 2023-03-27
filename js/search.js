@@ -3,9 +3,10 @@
 function search(i) {
 	var q = i.value;
 	q = q.replace(/^[ ]/g,'') // Remove leading spaces
-	if (i.checkValidity()) { // If query is an URL, go to it.
-		window.location=q;
-	} else if (q.substr(1, 1) == ' ') { // check if it's a bang (i.e. `y youtubequery` and `a query` are parsed here, but `query` is not)
+//	if (i.checkValidity()) { // If query is an URL, go to it.
+//		window.location=q;
+//	} else
+	if (q.substr(1, 1) == ' ') { // check if it's a bang (i.e. `y youtubequery` and `a query` are parsed here, but `query` is not)
 		switch(q.substr(0, 1)){
 			case 'y':
 				q = q.substr(2);
