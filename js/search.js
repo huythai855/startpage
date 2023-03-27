@@ -25,12 +25,7 @@ function search(i) {
 					'https://github.com/search?q=' +
 					q.replace(' ', '%20'));
 			break;
-			case 'l':
-				q = q.substr(2);
-				window.location=(
-					'http://libgen.rs/search.php?req=' +
-					q.replace(' ', '%20'));
-			break;
+
 			case 'r':
 				q = q.substr(2);
 				window.location=(
@@ -44,11 +39,11 @@ function search(i) {
 					q.replace(' ', '%20'));
 			break;
 			default:
-				window.location=('http://192.168.1.107:8888/search?q=' +
+				window.location=('https://www.google.com/search?q=' +
 					q.replace(' ', '%20'));
 		}
 	} else { // this is were `normal q` will be parsed
-		window.location=('http://192.168.1.107:8888/search?q=' +
+		window.location=('https://www.google.com/search?q=' +
 			q.replace(' ', '%20'));
 	}
 }
